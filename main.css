@@ -142,3 +142,39 @@ background-color: darkcyan;
     grid-column: 1 / -1;
     background-color:crimson;
 }
+
+.container5 {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: "h h h h h h h h h h h h"
+                         "m c c c c c mc mc mc mc mc mc"
+                         "f f f f f f f f f f f f";
+}
+
+.header2 {
+    grid-area: h;
+    background-color: antiquewhite;
+}
+
+.menu2 {
+    grid-area: m;
+    background-color: aqua;
+}
+
+.content2 {
+    grid-area: c;
+    background-color: darkcyan;
+}
+
+.morecontent2 {
+    grid-area: mc;
+    background-color:darkorchid;
+}
+
+.footer2 {
+    grid-area: f;
+    background-color:crimson;
+}
