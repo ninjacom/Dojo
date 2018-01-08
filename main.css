@@ -104,7 +104,7 @@ img {
 .container2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-    grid-template-rows: repeat(2, 100px);
+    grid-template-rows: repeat(3, 100px);
 }
 .container2 > div > img {
     width: 100%;
@@ -114,7 +114,7 @@ img {
 
 .container3 {
     display: grid;
-    grid-template: repeat(2, 100px) / repeat(auto-fit, minmax(100px,1fr)) ;
+    grid-template: repeat(3, 100px) / repeat(auto-fit, minmax(100px,1fr)) ;
 }
 
 .container4 {
@@ -177,4 +177,12 @@ background-color: darkcyan;
 .footer2 {
     grid-area: f;
     background-color:crimson;
+}
+
+
+.container6 {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    grid-template-rows: repeat(2, 100px);
 }
