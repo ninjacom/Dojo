@@ -75,7 +75,7 @@
         </div>
         
         <h3>CSS Grid: Auto-fit and minmax</h3>
-        <p>Auto-fit will add and remove columns/rows as more space is available. Alone, this will create extra space though. Use minmax() to manage the minimum and maximum values for multiple items in a row/column. </p>
+        <p>Auto-fit will add and remove columns/rows as more space is available. Alone, this will create extra space though. Use minmax() to manage the minimum and maximum values for multiple items in a row/column. Note that the resulting implict creation may not fit all contents when you resize smaller.</p>
         <div class="container6">
             <div>1</div>
             <div>2</div>
@@ -91,7 +91,22 @@
             <div>12</div>
         </div>
         
-        
+        <h3>CSS Grid: Implicit rows</h3>
+        <p>Use grid-auto-rows instead of grid-template-rows to make explicitly define the size of the rows. In this way, you can scale the screen size down but keep the same sized row.</p>
+        <div class="container7">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
         
     </body>
 </html>
