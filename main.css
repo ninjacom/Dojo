@@ -215,3 +215,31 @@ background-color: darkcyan;
     grid-column: span 2;
     grid-row: span 2;
 }
+
+
+.container9 {
+    height: 100%; 
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: [main-start] 1fr [content-start] 5fr [content-end main-end];
+    grid-template-rows: [main-start] 40px [content-start] auto [content-end] 40px [main-end]; 
+}
+
+.header9 {
+    grid-column: main-start / main-end;
+    background-color:aqua;
+}
+
+.menu9 {
+    background-color: bisque;
+}
+
+.content9 {
+    grid-area: content;
+    background-color: darkviolet;
+}
+
+.footer9 {
+    grid-column: main;
+    background-color: floralwhite;
+}

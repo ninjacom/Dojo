@@ -4,13 +4,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>My 100 Day Coding Challenge</title>
+        <title>CSS Grid: Part of My 100 Day Coding Challenge</title>
         <meta name="description" content="Many tests and tweaks using Brackets.">
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
+        <h1><a href="https://scrimba.com/g/gR8PTE">CSS Grid</a></h1>
         
-        <h3>CSS Grid: By Pixel with Grid Column</h3>
+        <h3>By Pixel with Grid Column</h3>
         <div class="wrapper">
             <div class="item1"><img src="../img/AssassinsWarAppIcon.png"></div>
             <div class="item2"><img src="../img/DragonHeroAppIcon.png"></div>
@@ -20,7 +21,7 @@
             <div class="item6"><img src="../img/StrawberryPrincessAppIcon.png"></div>
         </div>
         
-        <h3>CSS Grid: Responsive By Fraction Units and Pixels</h3>
+        <h3>Responsive By Fraction Units and Pixels</h3>
         
         <div class="container">
             <div><img src="../img/AssassinsWarAppIcon.png"></div>
@@ -31,7 +32,7 @@
             <div><img src="../img/StrawberryPrincessAppIcon.png"></div>
         </div>
         
-        <h3>CSS Grid: Responsive By repeat() function and auto-fit property</h3>
+        <h3>Responsive By repeat() function and auto-fit property</h3>
         <p>repeat() takes 2 parameters - amount of r/c, value of those</p>
          
         <div class="container2">
@@ -43,7 +44,7 @@
             <div><img src="../img/StrawberryPrincessAppIcon.png"></div>
         </div>
         
-        <h3>CSS Grid: Grid-template instead of Grid-template-column and grid-template-row</h3>
+        <h3>Grid-template instead of Grid-template-column and grid-template-row</h3>
         <p>Rows first, then columns</p>
          
         <div class="container3">
@@ -55,7 +56,7 @@
             <div><img src="../img/StrawberryPrincessAppIcon.png"></div>
         </div>
         
-        <h3>CSS Grid: Positioning Items</h3>
+        <h3>Positioning Items</h3>
         <p>Use lots of rows in the repeat() function, so you can move items around easily. Using -1 as a value takes you to the end of the row/column.</p>
         <div class="container4">
             <div class="header">HEADER</div>
@@ -64,7 +65,7 @@
             <div class="footer">FOOTER</div>
         </div>
         
-        <h3>CSS Grid: Template and grid areas</h3>
+        <h3>Template and grid areas</h3>
         <p>Define the grid-template-areas in the container, and all the child grid areas are easily added / adjusted in a layout. Note: only works with rectangular children.</p>
         <div class="container5">
             <div class="header2">HEADER</div>
@@ -74,7 +75,7 @@
             <div class="footer2">FOOTER</div>
         </div>
         
-        <h3>CSS Grid: Auto-fit and minmax</h3>
+        <h3>Auto-fit and minmax</h3>
         <p>Auto-fit will add and remove columns/rows as more space is available. Alone, this will create extra space though. Use minmax() to manage the minimum and maximum values for multiple items in a row/column. Note that the resulting implict creation may not fit all contents when you resize smaller.</p>
         <div class="container6">
             <div>1</div>
@@ -91,7 +92,7 @@
             <div>12</div>
         </div>
         
-        <h3>CSS Grid: Implicit rows</h3>
+        <h3>Implicit rows</h3>
         <p>Use grid-auto-rows instead of grid-template-rows to make explicitly define the size of the rows. In this way, you can scale the screen size down but keep the same sized row.</p>
         <div class="container7">
             <div>1</div>
@@ -108,9 +109,9 @@
             <div>12</div>
         </div>
         
-        <h3>CSS Grid: Awesome Image Grid</h3>
+        <h3>Awesome Image Grid</h3>
         <p>Use grid-auto-flow property 'dense' to fill in the black spots in a container. This is an example of Source Order Independence.</p>
-        <div class="container7">
+        <div class="container8">
             <div><img src="img/normal1.jpg"/></div>
             <div class="vertical"><img src="img/vertical1.jpg"/></div>
             <div class="horizontal"><img src="img/horizontal1.jpg"/></div>
@@ -129,6 +130,15 @@
             <div class="big"><img src="img/big3.jpg"/></div>
             <div><img src="img/normal9.jpg"/></div>
             <div class="vertical"><img src="img/vertical3.jpg"/></div>
+        </div>
+        
+        <h3>Named Lines</h3>
+        <p>Use properties in the container, and reference them in items for modular layouts. Items that have Dash-separated suffixes (ie. start, end) will allow you to just specify what was before the dash in the respective class. You can use grid-area instead of grid-column/row if you have properly boxed in the content.</p>
+        <div class="container9">
+            <div class="header9">HEADER</div>
+            <div class="menu9">MENU</div>
+            <div class="content9">CONTENT</div>
+            <div class="footer9">FOOTER</div>
         </div>
     </body>
 </html>
