@@ -59,19 +59,19 @@ img {
     }
 }
 
-.container > div:nth-child(1n), .container2 > div:nth-child(1n), .container3 > div:nth-child(1n), .container4 > div:nth-child(1n), .container5 > div:nth-child(1n), .container6 > div:nth-child(1n), .container7 > div:nth-child(1n), .container8 > div:nth-child(1n), .container9 > div:nth-child(1n), .container10 > div:nth-child(1n) {
+.container > div:nth-child(1n), .container2 > div:nth-child(1n), .container3 > div:nth-child(1n), .container4 > div:nth-child(1n), .container5 > div:nth-child(1n), .container6 > div:nth-child(1n), .container7 > div:nth-child(1n), .container8 > div:nth-child(1n), .container9 > div:nth-child(1n), .container10 > div:nth-child(1n), .container11 > div:nth-child(1n), .container12 > div:nth-child(1n), .container13 > div:nth-child(1n), .container14 > div:nth-child(1n), .container15 > div:nth-child(1n) {
     background-color: #96ceb4;	
 }
 
-.container > div:nth-child(3n), .container2 > div:nth-child(3n), .container3 > div:nth-child(3n), .container4 > div:nth-child(3n), .container5 > div:nth-child(3n), .container6 > div:nth-child(3n), .container7 > div:nth-child(3n), .container8 > div:nth-child(3n), .container9 > div:nth-child(3n), .container10 > div:nth-child(3n) {
+.container > div:nth-child(3n), .container2 > div:nth-child(3n), .container3 > div:nth-child(3n), .container4 > div:nth-child(3n), .container5 > div:nth-child(3n), .container6 > div:nth-child(3n), .container7 > div:nth-child(3n), .container8 > div:nth-child(3n), .container9 > div:nth-child(3n), .container10 > div:nth-child(3n), .container11 > div:nth-child(3n), .container12 > div:nth-child(3n), .container13 > div:nth-child(3n), .container14 > div:nth-child(3n), .container15 > div:nth-child(3n) {
     background-color: #88d8b0;
 }
 
-.container > div:nth-child(2n), .container2 > div:nth-child(2n), .container3 > div:nth-child(2n), .container4 > div:nth-child(2n), .container5 > div:nth-child(2n),.container6 > div:nth-child(2n), .container7 > div:nth-child(2n), .container8 > div:nth-child(2n), .container9 > div:nth-child(2n), .container10 > div:nth-child(2n) {
+.container > div:nth-child(2n), .container2 > div:nth-child(2n), .container3 > div:nth-child(2n), .container4 > div:nth-child(2n), .container5 > div:nth-child(2n),.container6 > div:nth-child(2n), .container7 > div:nth-child(2n), .container8 > div:nth-child(2n), .container9 > div:nth-child(2n), .container10 > div:nth-child(2n), .container11 > div:nth-child(2n), .container12 > div:nth-child(2n), .container13 > div:nth-child(2n), .container14 > div:nth-child(2n), .container15 > div:nth-child(2n) {
     background-color: #ff6f69;
 }
 
-.container > div:nth-child(4n), .container2 > div:nth-child(4n), .container3 > div:nth-child(4n), .container4 > div:nth-child(4n), .container5 > div:nth-child(4n), .container6 > div:nth-child(4n), .container7 > div:nth-child(4n), .container8 > div:nth-child(4n), .container9 > div:nth-child(4n), .container10 > div:nth-child(4n) {
+.container > div:nth-child(4n), .container2 > div:nth-child(4n), .container3 > div:nth-child(4n), .container4 > div:nth-child(4n), .container5 > div:nth-child(4n), .container6 > div:nth-child(4n), .container7 > div:nth-child(4n), .container8 > div:nth-child(4n), .container9 > div:nth-child(4n), .container10 > div:nth-child(4n), .container11 > div:nth-child(4n), .container12 > div:nth-child(4n), .container13 > div:nth-child(4n), .container14 > div:nth-child(4n), .container15 > div:nth-child(4n) {
     background-color: #ffcc5c;
 }
 
@@ -269,4 +269,49 @@ background-color: darkcyan;
     grid-template-rows: repeat(2, 100px);
     justify-content: space-around;
     align-content: flex-end;
+}
+
+.container11 {
+    height: 100%; 
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+.header11 {
+    grid-column: 1 / -1;
+}
+
+.menu11 {
+    grid-column: 1 / 3;
+    justify-self: start;
+    align-self: end;
+}
+
+.content11 {
+    grid-column: 3 / -1;
+}
+
+.footer11 {
+    grid-column: 1 / -1;
+}
+
+
+.container12 {
+    border: 1px solid black;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 100px 100px;
+}
+
+.container13 {
+    border: 1px solid black;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: 100px 100px;
 }
